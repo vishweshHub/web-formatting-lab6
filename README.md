@@ -51,8 +51,8 @@ To view the page locally:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/vishweshHub/cosmic-web-formatting-lab6.git
-   cd cosmic-web-formatting-lab6
+   git clone https://github.com/vishweshHub/web-formatting-lab6.git
+   cd web-formatting-lab6
    ```
 
 2. Open `index.html` in your browser, or start a local server:
