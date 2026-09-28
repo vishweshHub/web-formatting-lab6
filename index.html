@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Odyssey | Web Formatting & External CSS</title>
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-icon">✦</span>
+        <span class="brand-name">Cosmic<span class="brand-highlight">Lab</span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#typography" class="nav-link">Text Colors</a>
+        <a href="#borders" class="nav-link">Text Borders</a>
+        <a href="#background" class="nav-link">Background CSS</a>
+      </div>
+      <a href="#borders" class="nav-cta">Explore Styles</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="page-container">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Bordered Text Badge -->
+      <div class="text-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Web Technology &bull; CSS Formatting Lab 6</span>
+      </div>
+
+      <!-- Main Headline with Gradient Text Colors and Text Stroke Effect -->
+      <h1 class="hero-title">
+        Exploring the <span class="gradient-text">Infinite Cosmos</span>
+      </h1>
+
+      <!-- Outlined / Stroked Text Border Headline -->
+      <div class="stroked-title-container">
+        <h2 class="stroked-text">NEBULA HORIZON</h2>
+      </div>
+
+      <!-- Balanced Tagline with High Legibility -->
+      <p class="hero-description">
+        Crafting modern web interfaces with precision: pairing high-resolution cosmic background imagery, 
+        vibrant typography palettes, and distinctive borders for text using modern external CSS.
+      </p>
+
+      <!-- Action Buttons with Styled Borders -->
+      <div class="hero-actions">
+        <a href="#borders" class="btn btn-primary">
+          <span>View Text Borders</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+        <a href="#typography" class="btn btn-secondary">
+          <span>Inspect Text Colors</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 1: Text Colors Showcase -->
+    <section id="typography" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Typography System</span>
+        <h2 class="section-title">Harmonious Text Color Palettes</h2>
+        <p class="section-subtitle">
+          Demonstrating varied text color tokens, contrast ratios, glowing text-shadows, and modern gradient clipping.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Text Card 1: Electric Cyan & Lavender -->
+        <article class="card card-glow-cyan">
+          <div class="card-icon cyan-bg">⚡</div>
+          <h3 class="card-title text-cyan">Electric Neon Glow</h3>
+          <p class="card-text text-secondary">
+            Text styled with an ultra-vibrant cyan hue (<code class="color-code">#00f2fe</code>) and soft diffuse text-shadow for a luminous neon glow against deep cosmic backgrounds.
+          </p>
+          <div class="card-footer">
+            <span class="color-swatch swatch-cyan"></span>
+            <span class="swatch-label">Color: Cyan Highlight</span>
+          </div>
+        </article>
+
+        <!-- Text Card 2: Solar Amber Gradient -->
+        <article class="card card-glow-amber">
+          <div class="card-icon amber-bg">☀️</div>
+          <h3 class="card-title text-amber">Solar Flare Gradient</h3>
+          <p class="card-text text-secondary">
+            Multi-stop gradient text blending warm gold, amber, and coral tones using <code class="color-code">background-clip: text</code> and transparent text fill.
+          </p>
+          <div class="card-footer">
+            <span class="color-swatch swatch-amber"></span>
+            <span class="swatch-label">Color: Golden Amber</span>
+          </div>
+        </article>
+
+        <!-- Text Card 3: Cosmic Magenta Accent -->
+        <article class="card card-glow-magenta">
+          <div class="card-icon magenta-bg">🪐</div>
+          <h3 class="card-title text-magenta">Celestial Violet</h3>
+          <p class="card-text text-secondary">
+            Rich magenta and purple shades (<code class="color-code">#e056fd</code>) delivering high-contrast, energetic typography that harmonizes with stellar nebula clouds.
+          </p>
+          <div class="card-footer">
+            <span class="color-swatch swatch-magenta"></span>
+            <span class="swatch-label">Color: Galactic Violet</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 2: Border for Text Showcase (Comprehensive Styles) -->
+    <section id="borders" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Border Styling Showcase</span>
+        <h2 class="section-title">Techniques: Borders for Text</h2>
+        <p class="section-subtitle">
+          Six distinct methods of applying borders directly to text elements, labels, headlines, and callouts.
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- Technique 1: Text Outline / Stroke Border -->
+        <div class="border-demo-card">
+          <div class="demo-meta">
+            <span class="demo-number">01</span>
+            <span class="demo-name">Text Character Stroke (Hollow Border)</span>
+          </div>
+          <div class="demo-canvas">
+            <span class="text-border-stroke">OUTLINE GLOW</span>
+          </div>
+          <p class="demo-explanation">
+            Uses <code class="css-prop">-webkit-text-stroke: 1.5px #38ef7d</code> with transparent fill, generating an authentic border directly outlining individual letterforms.
+          </p>
+        </div>
+
+        <!-- Technique 2: Solid Bordered Text Pill / Badge -->
+        <div class="border-demo-card">
+          <div class="demo-meta">
+            <span class="demo-number">02</span>
+            <span class="demo-name">Solid Neon Border on Text Pill</span>
+          </div>
+          <div class="demo-canvas">
+            <span class="text-border-solid">✦ MISSION CERTIFIED ✦</span>
+          </div>
+          <p class="demo-explanation">
+            Applies <code class="css-prop">border: 2px solid #00f2fe</code> with soft border-radius and inner padding to enclose the text within a luminous boundary.
+          </p>
+        </div>
+
+        <!-- Technique 3: Dashed Ornamental Text Border -->
+        <div class="border-demo-card">
+          <div class="demo-meta">
+            <span class="demo-number">03</span>
+            <span class="demo-name">Dashed Cyberpunk Text Frame</span>
+          </div>
+          <div class="demo-canvas">
+            <span class="text-border-dashed">TELEMETRY DATA LOCK</span>
+          </div>
+          <p class="demo-explanation">
+            Configured with <code class="css-prop">border: 2px dashed #f6d365</code>, creating a technical, high-tech dashboard aesthetic around text labels.
+          </p>
+        </div>
+
+        <!-- Technique 4: Double Border Regal Framing -->
+        <div class="border-demo-card">
+          <div class="demo-meta">
+            <span class="demo-number">04</span>
+            <span class="demo-name">Double Border Text Plaque</span>
+          </div>
+          <div class="demo-canvas">
+            <span class="text-border-double">DEEP SPACE OBSERVATORY</span>
+          </div>
+          <p class="demo-explanation">
+            Utilizes <code class="css-prop">border: 4px double #e056fd</code> to render concentric outer and inner stroke lines framing the text title.
+          </p>
+        </div>
+
+        <!-- Technique 5: Left Accent Border Callout -->
+        <div class="border-demo-card">
+          <div class="demo-meta">
+            <span class="demo-number">05</span>
+            <span class="demo-name">Asymmetric Left Border Quote</span>
+          </div>
+          <div class="demo-canvas">
+            <blockquote class="text-border-left">
+              "Somewhere, something incredible is waiting to be known."
+              <cite class="quote-author">&mdash; Carl Sagan</cite>
+            </blockquote>
+          </div>
+          <p class="demo-explanation">
+            Implements <code class="css-prop">border-left: 4px solid #4facfe</code> paired with subtle background tinting for editorial text callouts.
+          </p>
+        </div>
+
+        <!-- Technique 6: Animated Gradient Border Box -->
+        <div class="border-demo-card">
+          <div class="demo-meta">
+            <span class="demo-number">06</span>
+            <span class="demo-name">Shimmering Gradient Border</span>
+          </div>
+          <div class="demo-canvas">
+            <div class="gradient-border-box">
+              <span class="gradient-border-text">STELLAR INTERFACE v2.4</span>
+            </div>
+          </div>
+          <p class="demo-explanation">
+            Uses a dual-layer linear gradient border with pseudo-element animation, highlighting textual highlights with shimmering colors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Visual Customizer & CSS Breakdown -->
+    <section id="background" class="content-section">
+      <div class="feature-spotlight">
+        <div class="spotlight-content">
+          <span class="section-tag">External CSS Architecture</span>
+          <h2 class="spotlight-title">Background & Formatting Architecture</h2>
+          <p class="spotlight-text">
+            This web page demonstrates the power of clean separation of concerns using external stylesheet <code class="code-pill">style.css</code>:
+          </p>
+
+          <ul class="specs-list">
+            <li class="spec-item">
+              <span class="spec-bullet">✓</span>
+              <div>
+                <strong class="text-primary">Fixed Cover Background Image:</strong>
+                <p class="spec-sub">Configured with <code class="css-snippet">background-size: cover; background-attachment: fixed; background-position: center;</code> for an immersive parallax depth effect.</p>
+              </div>
+            </li>
+            <li class="spec-item">
+              <span class="spec-bullet">✓</span>
+              <div>
+                <strong class="text-primary">Text Color System:</strong>
+                <p class="spec-sub">Organized with CSS variables (<code class="css-snippet">--text-primary</code>, <code class="css-snippet">--text-accent</code>, <code class="css-snippet">--cyan-glow</code>) ensuring high contrast and visual hierarchy.</p>
+              </div>
+            </li>
+            <li class="spec-item">
+              <span class="spec-bullet">✓</span>
+              <div>
+                <strong class="text-primary">Borders for Text:</strong>
+                <p class="spec-sub">Comprehensive coverage of text strokes, solid badges, dashed frames, double borders, and accent boundaries.</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Interactive Background Overlay Controls -->
+          <div class="interactive-panel">
+            <h4 class="panel-heading">Interactive Overlay Filter</h4>
+            <p class="panel-desc">Test readability over the cosmic background image in real time:</p>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="default">Cinematic Dark</button>
+              <button class="filter-btn" data-filter="deep">Deep Violet</button>
+              <button class="filter-btn" data-filter="clear">Vibrant Clarity</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotlight-code">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-title">style.css (External Stylesheet)</span>
+            </div>
+            <pre class="code-snippet"><code><span class="token-comment">/* 1. Background Image with Dark Vignette */</span>
+<span class="token-selector">body</span> {
+  <span class="token-prop">background-image</span>: 
+    <span class="token-func">linear-gradient</span>(
+      <span class="token-val">rgba(10, 11, 26, 0.78)</span>, 
+      <span class="token-val">rgba(10, 11, 26, 0.88)</span>
+    ),
+    <span class="token-func">url</span>(<span class="token-str">'images/background.jpg'</span>);
+  <span class="token-prop">background-size</span>: <span class="token-val">cover</span>;
+  <span class="token-prop">background-position</span>: <span class="token-val">center</span>;
+  <span class="token-prop">background-attachment</span>: <span class="token-val">fixed</span>;
+}
+
+<span class="token-comment">/* 2. Text Colors & Gradient Clipping */</span>
+<span class="token-selector">.gradient-text</span> {
+  <span class="token-prop">background</span>: <span class="token-func">linear-gradient</span>(<span class="token-val">135deg, #00f2fe, #4facfe, #e056fd</span>);
+  <span class="token-prop">-webkit-background-clip</span>: <span class="token-val">text</span>;
+  <span class="token-prop">color</span>: <span class="token-val">transparent</span>;
+}
+
+<span class="token-comment">/* 3. Text Border (Character Outline) */</span>
+<span class="token-selector">.text-border-stroke</span> {
+  <span class="token-prop">color</span>: <span class="token-val">transparent</span>;
+  <span class="token-prop">-webkit-text-stroke</span>: <span class="token-val">1.5px #38ef7d</span>;
+}
+
+<span class="token-comment">/* 4. Text Border (Pill Badge) */</span>
+<span class="token-selector">.text-border-solid</span> {
+  <span class="token-prop">border</span>: <span class="token-val">2px solid #00f2fe</span>;
+  <span class="token-prop">border-radius</span>: <span class="token-val">50px</span>;
+  <span class="token-prop">padding</span>: <span class="token-val">8px 22px</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-icon">✦</span>
+        <span class="brand-name">Cosmic<span class="brand-highlight">Lab</span></span>
+        <p class="footer-tagline">Web Formatting & External CSS Demonstration &bull; Lab 6</p>
+      </div>
+
+      <div class="footer-specs">
+        <span class="footer-badge">HTML5 Semantic</span>
+        <span class="footer-badge">External CSS3</span>
+        <span class="footer-badge">Responsive Design</span>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cosmic Odyssey Lab. Styled exclusively with External CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Light interactive script for the visual overlay selector -->
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        document.body.setAttribute('data-overlay', filter);
+      });
+    });
+  </script>
+</body>
+</html>
